@@ -40,6 +40,6 @@ _flutter.buildConfig = {"engineRevision":"425cfb54d01a9472b3e81d9e76fd63a4a44cfb
 // 文件由仓库内的 web/canvaskit/ 提供（与当前 Flutter 引擎版本匹配）。
 _flutter.loader.load({
   config: {
-    canvasKitBaseUrl: '/canvaskit/',
+    canvasKitBaseUrl: 'canvaskit/', //千万不能改动！！！
   },
 });
