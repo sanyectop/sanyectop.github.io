@@ -31038,7 +31038,7 @@ $S:2}
 A.aGu.prototype={
 $1(a){var s=A.dS().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/425cfb54d01a9472b3e81d9e76fd63a4a44cfbcb/":s)+a},
+return(s==null?"/sacluna/canvaskit/":s)+a},
 $S:64}
 A.Nr.prototype={
 a1y(){var s=this.akl(),r=$.bx.c7().ImageFilter.MakeColorFilter(s,null)
