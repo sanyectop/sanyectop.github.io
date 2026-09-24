@@ -35,8 +35,11 @@ if (!window._flutter) {
 }
 _flutter.buildConfig = {"engineRevision":"425cfb54d01a9472b3e81d9e76fd63a4a44cfbcb","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"},{}]};
 
+
+// 离线/内网环境：CanvasKit 从应用自身路径加载，不依赖 gstatic.com。
+// 文件由仓库内的 web/canvaskit/ 提供（与当前 Flutter 引擎版本匹配）。
 _flutter.loader.load({
-  serviceWorkerSettings: {
-    serviceWorkerVersion: "4052471948" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */
-  }
+  config: {
+    canvasKitBaseUrl: '/canvaskit/',
+  },
 });
